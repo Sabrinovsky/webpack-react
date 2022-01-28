@@ -1,7 +1,17 @@
-const elvenShieldRecipe = {
-  leatherStrips: 2,
-  ironIgnote: 1,
-  refinedMoonstone: 4,
+import _ from 'lodash';
+import './style.css';
+import Icon from './icon.png';
+
+function component() {
+  const element = document.createElement('div');
+
+  // Lodash, currently included via a script, is required for this line to work
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  element.classList.add('hello');
+
+
+
+  return element;
 }
 
-console.log(elvenShieldRecipe)
+document.body.appendChild(component());
