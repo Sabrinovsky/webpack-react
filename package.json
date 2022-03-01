@@ -2,17 +2,29 @@
   "private": true,
   "scripts": {
     "start": "webpack serve",
-    "watch": "webpack --watch",
-    "build": "webpack"
+    "watch": "webpack serve --open",
+    "build": "NODE_ENV=production webpack",
+    "build-dev": "webpack"
   },
   "dependencies": {
-    "lodash": "^4.17.21",
+    "@babel/preset-react": "^7.16.7",
+    "mini-css-extract-plugin": "^2.5.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-refresh": "^0.11.0",
     "webpack": "^5.67.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1"
   }
 }
