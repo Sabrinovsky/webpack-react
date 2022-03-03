@@ -11,12 +11,12 @@
     "mini-css-extract-plugin": "^2.5.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-refresh": "^0.11.0",
     "webpack": "^5.67.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.3"
+    "webpack-cli": "^4.9.2"
   },
   "devDependencies": {
+    "webpack-dev-server": "^4.7.3",
+    "react-refresh": "^0.11.0",
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
@@ -25,6 +25,12 @@
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.29.2",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
     "sass": "^1.49.7",
