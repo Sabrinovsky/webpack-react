@@ -3,5 +3,5 @@ module.exports = {
     "@babel/preset-env",
     ["@babel/preset-react", { runtime: 'automatic' }]
   ],
-  plugins: ['react-refresh/babel']
+  plugins: process.env.NODE_ENV === 'development' ? ['react-refresh/babel'] : []
 }

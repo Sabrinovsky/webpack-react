@@ -3,11 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 
-let mode = 'development'
-
-if (process.env.NODE_ENV === 'production') {
-  mode = 'production'
-}
+const mode = process.env.NODE_ENV || 'development'
 
 module.exports = {
   mode: mode,
